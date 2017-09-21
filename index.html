@@ -4,93 +4,41 @@
         <title>
             script-o-compiler
         </title>
-        <script src="script.js" type="text/javascript">
+        <script src="laxicalAnalyzer.js" type="text/javascript">
         </script>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
     </head>
     <body>
-        <div>
-            <h1>
-                Float constant:
-            </h1>
-            <label>
-                float myFloat=
-            </label>
-            <input id="float" name="">
-                <button onclick="float()">
-                    parse
-                </button>
-                <h5 id="floatResult" style="color:red">
-                </h5>
-            </input>
-        </div>
-        <hr>
-            <div>
-                <h1>
-                    character constant:
-                </h1>
-                <label>
-                    char myChar=
-                </label>
-                <input id="char" name="">
-                </input>
-                <button onclick="char()">
-                    parse
-                </button>
-                <h5 id="charResult" style="color:red">
-                </h5>
+        <div class="container">
+            <div class="row">
+           <div class="col-lg-4"></div>
+           <div class="col-lg-4"><h1> script-o-compiler</h1></div>
+           <div class="col-lg-4"></div>     
             </div>
-            <hr>
-                <div>
-                    <h1>
-                        String constant:
-                    </h1>
-                    <label>
-                        String myString=
-                    </label>
-                    <input id="string" name="">
-                    </input>
-                    <button onclick="string()">
-                        parse
-                    </button>
-                    <h5 id="stringResult" style="color:red">
-                    </h5>
-                </div>
-                <hr>
-                    <div>
-                        <h1>
-                            Integer constant:
-                        </h1>
-                        <label>
-                            integer myint=
-                        </label>
-                        <input id="integer" name="">
-                        </input>
-                        <button onclick="integer()">
-                            parse
-                        </button>
-                        <h5 id="integerResult" style="color:red">
-                        </h5>
-                    </div>
-                    <hr>
-                        <div>
-                            <h1>
-                                Identifier:
-                            </h1>
-                            <label>
-                                datatype
-                            </label>
-                            <input id="identifier" name="">
-                            </input>
-                            <button onclick="identifier()">
-                                parse
-                            </button>
-                            <h5 id="identifierResult" style="color:red">
-                    
-                            </h5>
-                        </div>
-                    </hr>
-                </hr>
-            </hr>
-        </hr>
+            <div class="row">
+           <div class="col-lg-2"></div>
+           <div class="col-lg-8">
+            <textarea id="code" rows="15" cols="100"></textarea>
+        <button class="btn btn-danger" id="run" onclick="Main()">run</button>
+        <button class="btn btn-primary" id="run" onclick="refresh()">refresh</button>
+        <button class="btn btn-primary" id="run" onclick="previous()">run previous code</button>
+        <hr>
+        <h3>laxical analysis</h3>
+        <hr>
+        <table id="table" class="table table-striped">
+            <thead >
+                <th style="border:solid 1px">class name</th>
+                <th style="border:solid 1px" >value</th>
+                <th style="border:solid 1px">lineno</th>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table></div>
+           <div class="col-lg-2"></div>     
+            </div>
+
+        
+    </div>
     </body>
 </html>

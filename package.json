@@ -1,0 +1,23 @@
+{
+  "name": "script-o-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BilalAlam173/script-o-compiler.git"
+  },
+  "author": "bilal alam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BilalAlam173/script-o-compiler/issues"
+  },
+  "homepage": "https://github.com/BilalAlam173/script-o-compiler#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "typescript": "^2.5.2"
+  }
+}
